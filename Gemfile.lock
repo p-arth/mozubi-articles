@@ -62,6 +62,7 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    awesome_print (1.9.2)
     bindex (0.8.1)
     bootsnap (1.7.5)
       msgpack (~> 1.0)
@@ -151,6 +152,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    readingtime (0.4.0)
     regexp_parser (2.1.1)
     rubyzip (2.3.1)
     sass-rails (6.0.0)
@@ -211,6 +213,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  awesome_print
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
@@ -221,6 +224,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4)
+  readingtime
   sass-rails (>= 6)
   selenium-webdriver
   shorturl

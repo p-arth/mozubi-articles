@@ -63,3 +63,9 @@ gem 'pry-byebug'
 
 # Simple Form
 gem 'simple_form'
+
+# Awesome Print
+gem 'awesome_print'
+
+# Reading Time
+gem 'readingtime'
