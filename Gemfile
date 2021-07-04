@@ -69,3 +69,6 @@ gem 'awesome_print'
 
 # Reading Time
 gem 'readingtime'
+
+# Pg_Search
+gem 'pg_search'
