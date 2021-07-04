@@ -6,21 +6,17 @@ require 'readingtime'
 class ArticlesController < ApplicationController
   before_action :set_article, only: :show
 
-  # GET /articles or /articles.json
   def index
     @articles = Article.all
   end
 
-  # GET /articles/1 or /articles/1.json
   def show
   end
 
-  # GET /articles/new
   def new
     @article = Article.new
   end
 
-  # POST /articles
   def create
     # Shorten source link
     short_url = ShortURL.shorten(article_params[:source], :tinyurl)
@@ -33,7 +29,6 @@ class ArticlesController < ApplicationController
     body = heading_array.join(', ')
     # Estimated reading time
     estimated_time = body.reading_time :format => :approx
-    # binding.pry
 
     @article = Article.new(
       title: article_params[:title],
@@ -51,12 +46,10 @@ class ArticlesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_article
       @article = Article.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def article_params
       params.require(:article).permit(:title, :source, :body, :estimated_time)
     end
