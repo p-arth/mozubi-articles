@@ -72,3 +72,7 @@ gem 'readingtime'
 
 # Pg_Search
 gem 'pg_search'
+
+# Styling
+gem 'font-awesome-sass', '~> 5.15.1'
+gem 'autoprefixer-rails'

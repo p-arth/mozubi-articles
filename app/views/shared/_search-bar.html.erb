@@ -1,0 +1,11 @@
+<%= form_tag root_path, method: :get, class: "form-inline w-75 d-flex mb-3" do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control ml-0 w-75",
+    type: "text",
+    placeholder: "Find an article"
+  %>
+  <%= button_tag type: 'submit', class: "btn btn-primary form-control w-25" do %>
+    <span>Search</span>
+  <% end %>
+<% end %>
