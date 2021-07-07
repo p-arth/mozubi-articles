@@ -34,6 +34,9 @@ class ArticlesController < ApplicationController
     body = heading_array.join(', ')
     # Estimated reading time
     estimated_time = body.reading_time :format => :approx
+    if estimated_time.include?('second')
+      estimated_time = 'Less than 1 minute'
+    end
 
     @article = Article.new(
       title: article_params[:title],
