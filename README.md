@@ -10,7 +10,8 @@ A simple content search web app.
 
 - Open your terminal of choice
 - Clone the repository with `$ git clone`
-- Run the application using `$ rails s`
+- Make sure you run `$ bundle install` & `$ rails db:create db:migrate`
+- Start the application using `$ rails s`
 - Run tests using `$ rspec`.
 
 # Check a live version on Heroku
